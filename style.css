@@ -1,1 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500;700&family=Poppins&family=Urbanist:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
 
+:root {
+  --bg-color: #f2f3f4;
+  --card-Color: #fafafa;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: var(--bg-color);
+}
+
+.card {
+  display: grid;
+  place-items: center;
+  width: 35%;
+  height: auto;
+  padding: 2rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: var(--card-Color);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  & h2 {
+    text-decoration: underline;
+    font-size: 2rem;
+  }
+}
+
+.analogClock {
+  background-image: url(assets/anClock.webp);
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  margin: 1.2rem 0;
+  border: 10px solid #fff;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hr .hrHand {
+  position: absolute;
+  height: 30px;
+  width: 3.5px;
+  background-color: rgba(18, 149, 206, 0.944);
+  top: 61px;
+  left: 87px;
+  transform-origin: bottom;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.min .minHand {
+  position: absolute;
+  height: 45px;
+  width: 3.5px;
+  background-color: rgba(121, 18, 190, 0.615);
+  top: 42px;
+  left: 87px;
+  transform-origin: bottom;
+  border-radius: 50%;
+}
+.sec .secHand {
+  position: absolute;
+  height: 55px;
+  width: 3px;
+  background-color: rgba(61, 135, 146, 0.43);
+  top: 35px;
+  left: 87px;
+  transform-origin: bottom;
+  border-radius: 50%;
+  transition-duration: 200ms;
+}
+
+.analogClock::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.1);
+  z-index: 99;
+}
+@media (width<=768px) {
+  .card {
+    width: 90%;
+  }
+}
