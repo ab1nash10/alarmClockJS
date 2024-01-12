@@ -172,9 +172,24 @@ body {
     background-color: rgb(132, 56, 255);
   }
 }
+@media (min-width: 768px) and (max-width: 1300px) {
+  .card {
+    width: 50%;
+  }
+  .selectArea select {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
 
 @media (width<=768px) {
   .card {
     width: 90%;
+  }
+}
+@media (width<=500px) {
+  .selectArea select {
+    font-size: 0.8rem;
+    padding: 0;
   }
 }
