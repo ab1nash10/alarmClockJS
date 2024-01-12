@@ -8,6 +8,10 @@ This is a simple alarm clock application created using HTML, CSS, and JavaScript
 - Enable or disable alarms.
 - Sound notification when the alarm goes off.
 
+## Screenshot 
+
+![AlarmClock Screenshot](./assets/mobile.gif)
+
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/ab1nash10/alarmClockJS.git`
