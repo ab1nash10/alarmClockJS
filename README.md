@@ -10,7 +10,7 @@ This is a simple alarm clock application created using HTML, CSS, and JavaScript
 
 ## Screenshot 
 
-![AlarmClock Screenshot](./assets/mobile (1).gif)
+![AlarmClock Screenshot](./assets/mobile.gif)
 
 ## Installation
 
